@@ -48,7 +48,7 @@ Outline below are the necessary steps required to integrate the Android SDK
         }
 
     }
-   ```  
+   ```
 
    ```java
    class MainActivity extends AppCompatActivity {
@@ -63,7 +63,7 @@ Outline below are the necessary steps required to integrate the Android SDK
     }
    ```  
      
-3. ##### Setting your API credentials
+2. ##### Setting your API credentials
    You can then set your Monnify API key and Contract code on the OnCreate method of the Monnify instance.
    Also, you can set the Monnify environment to be used on this method  
 
@@ -85,7 +85,7 @@ Outline below are the necessary steps required to integrate the Android SDK
    monnify.setApplicationMode(ApplicationMode.TEST);
    ```
 
-4. ##### Set the request code and key
+3. ##### Set the request code and key
    On clicking the 'Pay button', the initializePayment() method requires the activity context, an object of the TransactionDetails class, request code and result key. You can set the request code and key yourself in order to have more control, and to prevent clashes with other args in the main app.  
    ```kotlin
    Kotlin Implementation
@@ -125,7 +125,7 @@ Outline below are the necessary steps required to integrate the Android SDK
                    KEY_RESULT);
    ```
 
-5. ##### Update application UI after transaction completion
+4. ##### Update application UI after transaction completion
    Finally, you should listen for payment attempt outcomes on the OnActivityResult() method when the Monnify payment gateway closes. Use the request code and data key passed in the initializePayment() method to get response returned by the SDK.
    ```kotlin
    Kotlin Implementation
