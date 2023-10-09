@@ -1,2 +1,2 @@
 # AndroidSDK
-A guide on the integration of the Monnify Android SDK
+An Integration Guide for the Monnify Android SDK
